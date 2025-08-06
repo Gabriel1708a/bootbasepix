@@ -518,7 +518,7 @@ await sleep(5000)
   •escolha uma opção abaixo👇\n e *clique!*
                 `
                 
-                stella.sendPoll(from, byeliel_oi, [`telas📺 \ncoloque uma descrição aqui`, 'produtos🛍️ \ndescricão aqui',`formas-pagamento💰 \n escolha um tipo de pagamento`, 'suporte🧑‍💻 \nfale com um atendente '])
+                stella.sendPoll(from, byeliel_oi, [`telas📺 \ncoloque uma descrição aqui`, 'produtos🛍️ \ndescricão aqui',`formas-pagamento💰 \n escolha um tipo de pagamento`, 'Informações bot \nconheça mais sobre o bot', 'suporte🧑‍💻 \nfale com um atendente '])
             }
             
  break 
@@ -713,6 +713,12 @@ if (isGroup) return
     });
 
     break;
+
+case 'Informações bot':
+if (isGroup) return 
+await sleep(1000)
+reply(`Estas são as informações`)
+break
 
 case '👈suporte🧑‍💻':
 if (isGroup) return 
